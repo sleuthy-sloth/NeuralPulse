@@ -2,11 +2,11 @@
 
 **Daily brain training. Sharpen your edge.**
 
-NeuralPulse is an open-source brain training web app — think Elevate or Lumosity, but free, open, and playable entirely in your browser on desktop or mobile.
+NeuralPulse is an open-source brain training web app. Think Elevate or Lumosity, but free and playable in your browser on desktop or mobile.
 
 ## Live Site
 
-👉 **[neuralpulse.app](https://neuralpulse.app)**
+Deployment coming soon on Vercel. The `neuralpulse.app` domain is not owned by this project.
 
 ## Games
 
@@ -34,26 +34,26 @@ NeuralPulse is an open-source brain training web app — think Elevate or Lumosi
 
 ## Features
 
-- **13 brain games** — memory, math, reflexes, vocabulary, focus, and logic challenges
-- **Daily Challenge** — 3-game sequence, same for everyone (like Wordle)
-- **Dark theme** — easy on the eyes, with glassmorphism cards and subtle gradients
-- **Stats dashboard** — skill radar charts, trend sparklines, calendar heatmap, personal bests
-- **Streak tracking** — consecutive daily completions with heatmap calendar
-- **Share scores** — Wordle-style text card for daily challenge results
-- **Guest mode** — everything works offline in IndexedDB
-- **Optional account** — sync progress across devices via Supabase (Google OAuth / magic link)
-- **Mobile-first** — touch-optimized, PWA installable, safe-area-aware
-- **Free & open source** — CC BY-NC 4.0 licensed
+- **13 brain games:** memory, math, reflexes, vocabulary, focus, and logic
+- **Daily Challenge:** 3-game sequence, same for everyone (like Wordle)
+- **Dark theme** with glassmorphism cards and subtle gradients
+- **Stats dashboard:** skill radar charts, trend sparklines, calendar heatmap, personal bests
+- **Streak tracking:** consecutive daily completions with heatmap calendar
+- **Share scores:** Wordle-style text card for daily challenge results
+- **Guest mode:** everything works offline in IndexedDB
+- **Optional account:** sync progress across devices via Supabase (Google OAuth / magic link)
+- **Mobile-first:** touch-optimized, PWA installable, safe-area-aware
+- **Free and open source** (CC BY-NC 4.0)
 
 ## Tech Stack
 
-- **Next.js 16** — server-rendered React, deployed on Vercel
-- **TypeScript** — full type safety
-- **Tailwind CSS** — utility-first styling
-- **Zustand** — lightweight global state (progress, toasts)
-- **IndexedDB (idb)** — offline-first game storage
-- **Supabase** — optional account sync (Postgres + Auth)
-- **Vercel** — hosting with auto-deploy from `main`
+- **Next.js 16:** server-rendered React, deployed on Vercel
+- **TypeScript:** full type safety
+- **Tailwind CSS:** utility-first styling
+- **Zustand:** lightweight global state (progress, toasts)
+- **IndexedDB (idb):** offline-first game storage
+- **Supabase:** optional account sync (Postgres + Auth)
+- **Vercel:** hosting with auto-deploy from `main`
 
 ## Self-Hosting
 
@@ -70,10 +70,10 @@ To run NeuralPulse locally or deploy your own instance:
    npm install
    ```
 
-3. **Set up Supabase (optional — app works without it for guest mode):**
+3. **Set up Supabase (optional, app works without it for guest mode):**
    - Create a project at [supabase.com](https://supabase.com)
    - Run the migration in `supabase/migrations/001_initial_schema.sql` via the SQL Editor
-   - Enable Google OAuth + Email Magic Link in Auth → Providers
+   - Enable Google OAuth + Email Magic Link in Auth > Providers
    - Copy your project URL and anon key
 
 4. **Configure environment:**
@@ -88,7 +88,7 @@ To run NeuralPulse locally or deploy your own instance:
    ```
 
 6. **Deploy to Vercel:**
-   - Push to GitHub → Vercel auto-deploys from `main`
+   - Push to GitHub, Vercel auto-deploys from `main`
    - Set environment variables in Vercel dashboard:
      - `NEXT_PUBLIC_SUPABASE_URL`
      - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
@@ -103,4 +103,4 @@ npm run build    # production build
 
 ## License
 
-CC BY-NC 4.0 — see [LICENSE](./LICENSE).
+CC BY-NC 4.0. See [LICENSE](./LICENSE).
