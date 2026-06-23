@@ -1,12 +1,16 @@
-# NeuralPulse ✦
+# NeuralPulse
 
-**Daily brain training. Sharpen your edge.**
+**Daily brain training. Free, open source, playable in your browser.**
 
-NeuralPulse is an open-source brain training web app. Think Elevate or Lumosity, but free and playable in your browser on desktop or mobile.
+[![CI](https://github.com/sleuthy-sloth/NeuralPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/sleuthy-sloth/NeuralPulse/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-## Live Site
+NeuralPulse is an open-source brain training web app. Think Elevate or Lumosity, but free. No subscriptions, no ads, no data harvesting. Just 13 games that measure and track your cognitive performance over time.
 
-Deployment coming soon on Vercel. The `neuralpulse.app` domain is not owned by this project.
+## Why I Built It
+
+Brain training apps charge $5–15/month for what is fundamentally a collection of mini-games with progress tracking. I wanted to prove you can build something comparable — with radar charts, calendar heatmaps, streak tracking, daily challenges, and offline support — and give it away. NeuralPulse is the result.
 
 ## Games
 
@@ -21,29 +25,22 @@ Deployment coming soon on Vercel. The `neuralpulse.app` domain is not owned by t
 | **Speed Tap** | Reflexes | React as fast as you can when the signal changes. Measure your response time. |
 | **Word Twist** | Vocabulary | Unscramble letters to form words. Expand your mental agility. |
 | **Star Battle** | Logic | Place one star in each row, column, and region. No two stars may touch. |
-| **Digit Span** | Memory | Remember and recall sequences of digits. Gets harder each round! |
+| **Digit Span** | Memory | Remember and recall sequences of digits. Gets harder each round. |
 | **Flanker Task** | Focus | Identify the center arrow while ignoring distracting flanking arrows. |
-| **Reaction Grid** | Reflexes | Tap targets that appear on a grid as fast as you can! |
+| **Reaction Grid** | Reflexes | Tap targets that appear on a grid as fast as you can. |
 | **Pattern Matrix** | Logic | Find the missing piece in a 3x3 pattern. Raven's matrices style. |
-
-## Project Status
-
-[![GitHub](https://img.shields.io/github/license/sleuthy-sloth/NeuralPulse)](LICENSE)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
-[![CI](https://github.com/sleuthy-sloth/NeuralPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/sleuthy-sloth/NeuralPulse/actions/workflows/ci.yml)
 
 ## Features
 
 - **13 brain games:** memory, math, reflexes, vocabulary, focus, and logic
 - **Daily Challenge:** 3-game sequence, same for everyone (like Wordle)
-- **Dark theme** with glassmorphism cards and subtle gradients
 - **Stats dashboard:** skill radar charts, trend sparklines, calendar heatmap, personal bests
 - **Streak tracking:** consecutive daily completions with heatmap calendar
 - **Share scores:** Wordle-style text card for daily challenge results
-- **Guest mode:** everything works offline in IndexedDB
+- **Guest mode:** works offline in IndexedDB — no account required
 - **Optional account:** sync progress across devices via Supabase (Google OAuth / magic link)
 - **Mobile-first:** touch-optimized, PWA installable, safe-area-aware
-- **Free and open source** (CC BY-NC 4.0)
+- **Free and open source** (MIT)
 
 ## Tech Stack
 
@@ -53,7 +50,6 @@ Deployment coming soon on Vercel. The `neuralpulse.app` domain is not owned by t
 - **Zustand:** lightweight global state (progress, toasts)
 - **IndexedDB (idb):** offline-first game storage
 - **Supabase:** optional account sync (Postgres + Auth)
-- **Vercel:** hosting with auto-deploy from `main`
 
 ## Self-Hosting
 
@@ -99,8 +95,9 @@ To run NeuralPulse locally or deploy your own instance:
 ```bash
 npm run dev      # local dev server
 npm run build    # production build
+npm run test     # run tests
 ```
 
 ## License
 
-CC BY-NC 4.0. See [LICENSE](./LICENSE).
+MIT — see [LICENSE](LICENSE).
